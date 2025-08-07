@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dismisly - Coming Soon</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Montserrat, Sora, and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Applying Brand Fonts */
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .font-sora { font-family: 'Sora', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
+
+        /* Custom Action Orange Shadow for Buttons */
+        .shadow-orange {
+             box-shadow: 0 4px 6px -1px rgba(242, 109, 33, 0.2), 0 2px 4px -2px rgba(242, 109, 33, 0.1);
+        }
+        .shadow-orange-lg {
+            box-shadow: 0 10px 15px -3px rgba(242, 109, 33, 0.2), 0 4px 6px -4px rgba(242, 109, 33, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-[#F9F6F1] text-[#545454]">
+
+    <!-- Header / Hero Section -->
+    <header class="text-center py-16 md:py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <!-- Logo -->
+            <img src="images/logo.png" alt="Dismisly Logo" class="h-16 md:h-20 mx-auto mb-8" onerror="this.onerror=null; this.src='https://placehold.co/250x60/2E4035/F9F6F1?text=dismisly';">
+
+            <h1 class="font-montserrat text-4xl md:text-5xl font-bold text-[#2E4035] tracking-tight">
+                Smarter school dismissals. <br class="hidden md:block"> Safer students.
+            </h1>
+            <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
+                Dismisly is the real-time dismissal platform built for safety, simplicity, and speed. We're creating a secure communication bridge between schools and parents, bringing calm and clarity to the end of the school day.
+            </p>
+            <!-- Email Signup Form -->
+            <form action="#" method="POST" class="mt-10 max-w-lg mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" required placeholder="Enter your email address" class="font-inter w-full px-5 py-3 rounded-lg border-2 border-[#E0E0E0] focus:ring-[#F26D21] focus:border-[#F26D21] transition duration-150 ease-in-out bg-white" />
+                    <button type="submit" class="font-sora bg-[#F26D21] text-white font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg">
+                        Stay Informed
+                    </button>
+                </div>
+                <p class="mt-3 text-sm text-[#545454]/80">Join our waitlist for R&D updates and early access.</p>
+            </form>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+
+        <!-- The Problem Section -->
+        <section class="text-center bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[#E0E0E0]/50">
+            <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-[#2E4035]">We Understand the Dismissal Dilemma.</h2>
+            <p class="mt-4 text-lg text-[#545454] max-w-3xl mx-auto">
+                The end-of-day bell shouldn't signal the start of chaos. We've spoken with hundreds of parents and educators, and the challenges are universal.
+            </p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8 text-left">
+                <!-- For Educators -->
+                <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
+                    <h3 class="font-sora text-xl font-semibold text-[#2E4035]">For Educators & Administrators</h3>
+                    <p class="mt-2">Juggling last-minute phone calls, deciphering handwritten notes, managing long car lines, and the constant pressure of ensuring every single student is safely accounted for.</p>
+                </div>
+                <!-- For Parents -->
+                <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
+                    <h3 class="font-sora text-xl font-semibold text-[#2E4035]">For Parents</h3>
+                    <p class="mt-2">The uncertainty of whether the school received the change-of-plans email, the anxiety of a delayed pickup, and the desire for clear, direct communication about their child's departure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- R&D and Setmore Section -->
+        <section class="mt-16 md:mt-20 bg-white rounded-2xl p-8 md:p-12 border border-[#E0E0E0]/50 shadow-sm">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <!-- R&D Content -->
+                <div>
+                    <h2 class="font-montserrat text-3xl font-bold text-[#2E4035]">Grounded in Research, Developed with Care.</h2>
+                    <p class="mt-4">
+                        A tool for school safety can't be rushed. That's why Dismisly is currently in a dedicated <strong>Research & Development (R&D) phase.</strong> We are actively collaborating with teachers, administrators, and parents to build features that solve real-world problems.
+                    </p>
+                     <p class="mt-4">
+                        Your feedback is essential in shaping a tool that is not only powerful but also incredibly easy to use.
+                    </p>
+                </div>
+                <!-- Setmore Integration -->
+                <div class="bg-[#F9F6F1] border-2 border-dashed border-[#E0E0E0] rounded-xl p-8 text-center">
+                    <h3 class="font-sora text-xl font-semibold text-[#2E4035]">Want to be part of the process?</h3>
+                    <p class="mt-2">We invite parents and educators to schedule a 15-minute discovery call to share your experiences and help guide our development.</p>
+                    <a href="https://dismisly.setmore.com/melissa" target="_blank" rel="noopener noreferrer" class="font-sora mt-6 inline-block bg-[#F26D21] text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg">
+                        Schedule a Discovery Call
+                    </a>
+                    <p class="mt-3 text-xs text-[#545454]/80">Powered by Setmore</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2E4035] text-white mt-12">
+        <div class="max-w-7xl mx-auto px-6 py-8 text-center text-sm text-[#F9F6F1]/70">
+            <p>&copy; 2025 Dismisly. All Rights Reserved. | Tampa, FL</p>
+            <p class="mt-2">
+                <a href="mailto:melissa@dismisly.com" class="hover:text-white transition">melissa@dismisly.com</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
