@@ -50,13 +50,19 @@
             <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
                 Dismisly is the real-time dismissal platform built for safety, simplicity, and speed. It’s the tool for people who care about kids and don’t have time to waste.
             </p>
-            <!-- Email Signup Form -->
-            <form action="#" method="POST" class="mt-10 max-w-lg mx-auto">
+            <!-- Begin Brevo Form -->
+            <form id="sib-form" method="POST" action="https://2b0a4d75.sibforms.com/serve/MUIFAIRZGf86ewo4ACljB4poB_bQfZA-O1QXTdgJimlxQppI849TuvWkUdt1VlUKLgT0WCdvxyHmT4deZnCyi-1A3L-WP-y1ijm8DgoehD20jyrhzuxdXtje5c38nzkyKlh9YYFtH4P6DKwbe_A_sjhp7xeHkB5d87ffZ_z9xGL2UJ0F4XAk0NXzKhs95tJmGXA0yyd1dg3qqCcU" data-type="subscription" class="mt-10 max-w-lg mx-auto">
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <input type="email" required placeholder="Enter your email address" class="font-inter w-full px-5 py-3 rounded-lg border-2 border-[#E0E0E0] focus:ring-[#F26D21] focus:border-[#F26D21] transition duration-150 ease-in-out bg-white" />
-                    <button type="submit" class="font-sora bg-[#F26D21] text-white font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg">
+                    <input type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address" data-required="true" required class="font-inter w-full px-5 py-3 rounded-lg border-2 border-[#E0E0E0] focus:ring-[#F26D21] focus:border-[#F26D21] transition duration-150 ease-in-out bg-white" />
+                    <button form="sib-form" type="submit" class="font-sora bg-[#F26D21] text-white font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg">
                         Join The Waitlist
                     </button>
+                </div>
+                <p class="mt-3 text-sm text-[#545454]/80">Get R&D updates and early access opportunities.</p>
+                <input type="text" name="email_address_check" value="" class="hidden">
+                <input type="hidden" name="locale" value="en">
+            </form>
+            <!-- End Brevo Form -->
                 </div>
                 <p class="mt-3 text-sm text-[#545454]/80">Get R&D updates and early access opportunities.</p>
             </form>
