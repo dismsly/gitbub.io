@@ -1,159 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dismisly - Know Where. Know When. No Stress. </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dismisly • Know Where. Know When. No Stress.</title>
 
-    <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-    <meta property="og:title" content="Dismisly - Know Where. Know When. No Stress." />
-    <meta property="og:description" content="Dismisly is the real-time dismissal platform built for safety, simplicity, and speed. It’s the tool for people who care about kids and don’t have time to waste." />
-    <meta property="og:image" content="logo.png" />
-    <meta property="og:url" content="https://dismisly.gitbub.io" />
-    <meta property="og:type" content="website" />
-    
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Montserrat, Sora, and Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <style>
-        /* Applying Brand Fonts */
-        .font-montserrat { font-family: 'Montserrat', sans-serif; }
-        .font-sora { font-family: 'Sora', sans-serif; }
-        body { font-family: 'Inter', sans-serif; }
+  <!-- Primary Meta -->
+  <meta name="title" content="Dismisly • Know Where. Know When. No Stress." />
+  <meta name="description" content="Dismisly is creating modern infrastructure for student movement, replacing outdated systems used for arrivals, dismissals, and transportation. Real time visibility and coordination for families and schools." />
 
-        /* Custom Action Orange Shadow for Buttons */
-        .shadow-orange {
-             box-shadow: 0 4px 6px -1px rgba(242, 109, 33, 0.2), 0 2px 4px -2px rgba(242, 109, 33, 0.1);
-        }
-        .shadow-orange-lg {
-            box-shadow: 0 10px 15px -3px rgba(242, 109, 33, 0.2), 0 4px 6px -4px rgba(242, 109, 33, 0.1);
-        }
-    </style>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dismisly • Know Where. Know When. No Stress." />
+  <meta property="og:description" content="Modern infrastructure for student movement from morning arrivals to buses and end of day dismissal. Real time visibility and coordination that makes transitions faster, safer, and more reliable." />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:url" content="https://dismisly.github.io" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts: Montserrat, Sora, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    .font-sora { font-family: 'Sora', sans-serif; }
+    body { font-family: 'Inter', sans-serif; }
+    .shadow-orange { box-shadow: 0 4px 6px -1px rgba(242, 109, 33, 0.2), 0 2px 4px -2px rgba(242, 109, 33, 0.1); }
+    .shadow-orange-lg { box-shadow: 0 10px 15px -3px rgba(242, 109, 33, 0.2), 0 4px 6px -4px rgba(242, 109, 33, 0.1); }
+  </style>
 </head>
 <body class="bg-[#F9F6F1] text-[#545454]">
 
-    <!-- Header / Hero Section -->
-    <header class="text-center py-16 md:py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <!-- Logo -->
-            <img src="logo.png" alt="Dismisly Logo" class="h-40 md:h-60 mx-auto mb-8" onerror="this.onerror=null; this.src='https://placehold.co/250x60/2E4035/F9F6F1?text=dismisly';">
-            
-            <h1 class="font-montserrat text-4xl md:text-5xl font-bold text-[#2E4035] tracking-tight">
-                Know Where. Know When. <br class="hidden md:block"> No Stress.
-            </h1>
-            <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
-                Dismisly is the real-time dismissal platform built for safety, simplicity, and speed. It’s the tool for people who care about kids and don’t have time to waste.
-            </p>
-            <!-- Begin Brevo Form -->
-            <form id="sib-form" method="POST" action="https://2b0a4d75.sibforms.com/serve/MUIFAIRZGf86ewo4ACljB4poB_bQfZA-O1QXTdgJimlxQppI849TuvWkUdt1VlUKLgT0WCdvxyHmT4deZnCyi-1A3L-WP-y1ijm8DgoehD20jyrhzuxdXtje5c38nzkyKlh9YYFtH4P6DKwbe_A_sjhp7xeHkB5d87ffZ_z9xGL2UJ0F4XAk0NXzKhs95tJmGXA0yyd1dg3qqCcU" data-type="subscription" class="mt-10 max-w-lg mx-auto">
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <input type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address" data-required="true" required class="font-inter w-full px-5 py-3 rounded-lg border-2 border-[#E0E0E0] focus:ring-[#F26D21] focus:border-[#F26D21] transition duration-150 ease-in-out bg-white" />
-                    <button form="sib-form" type="submit" class="font-sora bg-[#F26D21] text-white font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg">
-                        Join The Waitlist
-                    </button>
-                </div>
-                <p class="mt-3 text-sm text-[#545454]/80">Get R&D updates and early access opportunities.</p>
-                <input type="text" name="email_address_check" value="" class="hidden">
-                <input type="hidden" name="locale" value="en">
-            </form>
-            <!-- End Brevo Form -->
+  <!-- Header / Hero -->
+  <header class="text-center py-16 md:py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <img src="logo.png" alt="Dismisly logo" class="h-40 md:h-60 mx-auto mb-8"
+           loading="lazy"
+           onerror="this.onerror=null; this.src='https://placehold.co/250x60/2E4035/F9F6F1?text=dismisly';"/>
+
+      <h1 class="font-montserrat text-4xl md:text-5xl font-bold text-[#2E4035] tracking-tight">
+        Know Where. Know When. <br class="hidden md:block"> No Stress.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
+        Dismisly is creating modern infrastructure for student movement, replacing outdated systems still used for arrivals, dismissals, and transportation. It is built for safety, simplicity, and speed.
+      </p>
+
+      <!-- Brevo Form -->
+      <form id="sib-form"
+            method="POST"
+            action="https://2b0a4d75.sibforms.com/serve/MUIFAIRZGf86ewo4ACljB4poB_bQfZA-O1QXTdgJimlxQppI849TuvWkUdt1VlUKLgT0WCdvxyHmT4deZnCyi-1A3L-WP-y1ijm8DgoehD20jyrhzuxdXtje5c38nzkyKlh9YYFtH4P6DKwbe_A_sjhp7xeHkB5d87ffZ_z9xGL2UJ0F4XAk0NXzKhs95tJmGXA0yyd1dg3qqCcU"
+            data-type="subscription"
+            class="mt-10 max-w-lg mx-auto"
+            aria-label="Join the waitlist form">
+        <div class="flex flex-col sm:flex-row gap-4">
+          <label for="EMAIL" class="sr-only">Email address</label>
+          <input type="email" id="EMAIL" name="EMAIL" autocomplete="email"
+                 placeholder="Enter your email address"
+                 required
+                 class="w-full px-5 py-3 rounded-lg border-2 border-[#E0E0E0] focus:ring-[#F26D21] focus:border-[#F26D21] transition duration-150 ease-in-out bg-white" />
+          <button type="submit"
+                  class="font-sora bg-[#F26D21] text-white font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg">
+            Join The Waitlist
+          </button>
         </div>
-    </header>
+        <p class="mt-3 text-sm text-[#545454]/80">Get Research and Development updates and early access opportunities.</p>
+        <input type="text" name="email_address_check" value="" class="hidden" aria-hidden="true"/>
+        <input type="hidden" name="locale" value="en"/>
+      </form>
+      <!-- End Brevo Form -->
+    </div>
+  </header>
 
-    <main class="max-w-7xl mx-auto px-6">
+  <main class="max-w-7xl mx-auto px-6">
 
-        <!-- The Problem Section -->
-        <section class="mb-16 md:mb-24 text-center">
-            <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-[#2E4035]">It Started with a Recurring Moment of Madness.</h2>
-            <p class="mt-4 text-lg max-w-4xl mx-auto">
-                This wasn’t just an annoyance; it was a systemic failure. The average school pickup can take over 30 minutes, wasting millions of parent-hours and posing significant safety risks. As a parent, a strategist, and someone who thinks in systems, the itch to fix it turned into a plan to build something better.
-            </p>
-        </section>
+    <!-- Problem -->
+    <section class="mb-16 md:mb-24 text-center">
+      <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-[#2E4035]">It Started with a Recurring Moment of Madness.</h2>
+      <p class="mt-4 text-lg max-w-4xl mx-auto">
+        What looked like just pickup revealed a systemic failure. Every day, arrivals, dismissals, and bus transitions waste millions of parent hours, frustrate staff, and expose safety gaps. In a world of ongoing safety threats, not knowing when and where children are is no longer acceptable.
+      </p>
+    </section>
 
-        <!-- The Solution: A System in Sync -->
-        <section class="mb-16 md:mb-24 bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[#E0E0E0]/50">
-            <div class="text-center mb-12">
-                <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-[#2E4035]">A System in Sync: A View for Everyone</h2>
-                <p class="mt-4 text-lg max-w-3xl mx-auto">Dismisly works like a well-oiled, tech-enabled system that connects parents, staff, and students in real-time. No shouting, no confusion, no wasted minutes.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-                <!-- For the Parent -->
-                <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
-                    <h3 class="font-sora text-xl font-semibold text-[#2E4035]">The Parent</h3>
-                    <p class="mt-2"><strong class="text-slate-600">Before:</strong> The anxiety of the unknown. Is my child ready? Am I in the right line? How much longer will this take?<br><br><strong class="text-[#2E4035]">With Dismisly:</strong> Peace of mind. A notification confirms your arrival, your assigned lane, and your child's real-time status. You get your kid, and you get your afternoon back.</p>
-                </div>
-                <!-- For the School Staff -->
-                <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
-                    <h3 class="font-sora text-xl font-semibold text-[#2E4035]">The Staff</h3>
-                    <p class="mt-2"><strong class="text-slate-600">Before:</strong> The chaos of managing car lines, walkie-talkies, and last-minute changes, all while trying to keep hundreds of kids safe.<br><br><strong class="text-[#2E4035]">With Dismisly:</strong> Calm control. A real-time dashboard shows exactly who is here and where they are going. You can manage the flow, not the chaos.</p>
-                </div>
-                <!-- For the Student -->
-                <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
-                    <h3 class="font-sora text-xl font-semibold text-[#2E4035]">The Student</h3>
-                    <p class="mt-2"><strong class="text-slate-600">Before:</strong> The confusion of a crowded hall, trying to hear your name being called over the noise.<br><br><strong class="text-[#2E4035]">With Dismisly:</strong> Simple clarity. Your name and photo appear on a screen with a clear instruction: "Go to Lane 3." You know exactly where to go, safely and confidently.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Solution -->
+    <section class="mb-16 md:mb-24 bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[#E0E0E0]/50">
+      <div class="text-center mb-12">
+        <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-[#2E4035]">A System in Sync: A View for Everyone</h2>
+        <p class="mt-4 text-lg max-w-3xl mx-auto">
+          Dismisly works like modern infrastructure that connects parents, staff, and students in real time. No shouting, no confusion, no wasted minutes.
+        </p>
+      </div>
 
-        <!-- About Me Section -->
-        <section class="mb-16 md:mb-24 bg-white rounded-2xl p-8 md:p-12 border border-[#E0E0E0]/50 shadow-sm">
-            <div class="grid md:grid-cols-12 gap-10 items-center">
-                <!-- Founder Photo -->
-                <div class="md:col-span-4">
-                    <img src="melissa.jpg" alt="Photo of Melissa Zellner Gomez, Founder of Dismisly" class="rounded-lg aspect-square w-full object-cover shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/400x400/E0E0E0/545454?text=Melissa';">
-                </div>
-                <!-- About Me Content -->
-                <div class="md:col-span-8">
-                    <h2 class="font-montserrat text-3xl font-bold text-[#2E4035]">A Note from Our Founder</h2>
-                    <h3 class="font-sora text-xl font-semibold text-[#F26D21] mt-1">Melissa Zellner Gomez</h3>
-                    <div class="mt-4 space-y-4 text-base">
-                        <p>
-                            I'm a systems strategist, government advisor, and founder who has spent two decades translating chaos into coordination. However, I'm also a mother. One who has waited in enough disorganized school pickup lines to know that inefficiency isn’t just frustrating; it’s avoidable.
-                        </p>
-                        <p>
-                           Dismisly was born from that collision point: deep professional expertise in system redesign and a relentless personal belief that everyday problems deserve world-class solutions. With Dismisly, I’m not just streamlining a process. I’m reimagining what it looks like when technology creates clarity and safety for families, schools, and entire communities.
-                        </p>
-                        <p class="font-semibold">My mission: Know Where. Know When. No Stress. </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Final CTA & Setmore Section -->
-        <section class="text-center bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[#E0E0E0]/50">
-            <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-[#2E4035]">Help Us Build the Future of Dismissal</h2>
-            <p class="mt-4 text-lg max-w-3xl mx-auto">
-                Dismisly is currently in a dedicated Research & Development phase. We invite school administrators and interested parents to connect with us, share your experiences, and help guide our development.
-            </p>
-            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="https://dismisly.setmore.com/melissa" target="_blank" rel="noopener noreferrer" class="font-sora bg-[#F26D21] text-white font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg">
-                    Schedule a Discovery Call
-                </a>
-                <a href="mailto:melissa@dismisly.com" class="font-sora text-[#2E4035] font-semibold py-3 px-8 rounded-lg hover:bg-gray-200/50 transition">
-                    Or Email Us Directly
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-[#2E4035] text-white mt-16 md:mt-24">
-        <div class="max-w-7xl mx-auto px-6 py-8 text-center text-sm text-[#F9F6F1]/70">
-            <p>&copy; 2025 Dismisly. All Rights Reserved. | Apollo Beach, FL</p>
-            <p class="mt-2">
-                <a href="mailto:melissa@dismisly.com" class="hover:text-white transition">melissa@dismisly.com</a>
-            </p>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <!-- Parent -->
+        <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
+          <h3 class="font-sora text-xl font-semibold text-[#2E4035]">The Parent</h3>
+          <p class="mt-2">
+            <strong class="text-slate-600">Before:</strong> Anxiety about readiness, line position, and time.<br><br>
+            <strong class="text-[#2E4035]">With Dismisly:</strong> Peace of mind. From drop off to the ride home, you know when your child boarded, where they are headed, and if something did not go as planned.
+          </p>
         </div>
-    </footer>
+
+        <!-- Staff -->
+        <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
+          <h3 class="font-sora text-xl font-semibold text-[#2E4035]">The Staff</h3>
+          <p class="mt-2">
+            <strong class="text-slate-600">Before:</strong> Chaos with car lines, buses, and last minute changes using paper lists and walkie talkies.<br><br>
+            <strong class="text-[#2E4035]">With Dismisly:</strong> Calm control. A real time view shows who is here, who has boarded, and who still needs to be accounted for. You manage the flow, not the chaos.
+          </p>
+        </div>
+
+        <!-- Student -->
+        <div class="bg-[#F9F6F1] p-8 rounded-xl border border-[#E0E0E0]">
+          <h3 class="font-sora text-xl font-semibold text-[#2E4035]">The Student</h3>
+          <p class="mt-2">
+            <strong class="text-slate-600">Before:</strong> Confusion in crowded halls and missed announcements.<br><br>
+            <strong class="text-[#2E4035]">With Dismisly:</strong> Simple clarity. Clear instructions tell you where to go such as Lane 3, Bus A, or After School Room. You move confidently, safely, and on time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section class="mb-16 md:mb-24 bg-white rounded-2xl p-8 md:p-12 border border-[#E0E0E0]/50 shadow-sm">
+      <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-4">
+          <img src="melissa.jpg" alt="Photo of Melissa Zellner Gomez, founder of Dismisly"
+               class="rounded-lg aspect-square w-full object-cover shadow-md"
+               loading="lazy"
+               onerror="this.onerror=null; this.src='https://placehold.co/400x400/E0E0E0/545454?text=Melissa';"/>
+        </div>
+        <div class="md:col-span-8">
+          <h2 class="font-montserrat text-3xl font-bold text-[#2E4035]">A Note from Our Founder</h2>
+          <h3 class="font-sora text-xl font-semibold text-[#F26D21] mt-1">Melissa Zellner Gomez</h3>
+          <div class="mt-4 space-y-4 text-base">
+            <p>
+              I am a systems strategist, government advisor, and founder who has spent two decades translating chaos into coordination. I am also a mother who has waited in enough disorganized school lines to know inefficiency is not just frustrating, it is unsafe.
+            </p>
+            <p>
+              Dismisly was born from that collision of experience and care. What began with dismissal has expanded into a vision to modernize every system that moves children between home, school, and beyond by car, by bus, and after school.
+            </p>
+            <p class="font-semibold">My mission: Know Where. Know When. No Stress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- CTA -->
+<section class="text-center bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[#E0E0E0]/50">
+  <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-[#2E4035]">
+    Help Us Build the Future of Student Movement and Safety
+  </h2>
+  <p class="mt-4 text-lg max-w-3xl mx-auto">
+    Dismisly is continuously gathering feedback from parents, staff, and administrators to shape what comes next. We invite you to connect with us, share your experiences, and help guide the future of safer and smarter student movement.
+  </p>
+  <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+    <a href="https://dismisly.setmore.com/melissa"
+       target="_blank" rel="noopener noreferrer"
+       class="font-sora bg-[#F26D21] text-white font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition duration-150 ease-in-out shadow-orange hover:shadow-orange-lg"
+       aria-label="Schedule a discovery call">
+      Schedule a Discovery Call
+    </a>
+    <a href="mailto:melissa@dismisly.com"
+       class="font-sora text-[#2E4035] font-semibold py-3 px-8 rounded-lg hover:bg-gray-200/50 transition"
+       aria-label="Email Dismisly">
+      Or Email Us Directly
+    </a>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#2E4035] text-white mt-16 md:mt-24">
+    <div class="max-w-7xl mx-auto px-6 py-8 text-center text-sm text-[#F9F6F1]/70">
+      <p>&copy; 2025 Dismisly. All Rights Reserved. | Apollo Beach, FL</p>
+      <p class="mt-2">
+        <a href="mailto:melissa@dismisly.com" class="hover:text-white transition">melissa@dismisly.com</a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
-
 
